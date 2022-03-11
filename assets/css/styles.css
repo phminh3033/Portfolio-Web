@@ -1,0 +1,144 @@
+/*--============================ GOOGLE FONT ============================--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*--============================ VARIABLES CSS ============================--*/
+:root{
+	--header-height: 3rem ;
+
+	/*========= Color ==========*/
+
+	--hue-color: 240;
+
+	/*========= HSL color mode=========*/
+	--first-color: hsl(var(--hue-color), 100%, 73%);
+	--first-color-second: hsl(var(--hue-color), 100%, 73%);
+	--first-color-alt: hsl(var(--hue-color), 85%, 63%);
+	--first-color-lighter: hsl(var(--hue-color), 100%, 90%);
+	--title-color: hsl(var(--hue-color), 10%, 20%);
+	--text-color: hsl(var(--hue-color), 10%, 45%);
+	--text-color-light: hsl(var(--hue-color), 10%, 32%);
+	--input-color: hsl(var(--hue-color), 90%, 65%);
+	--body-color: hsl(var(--hue-color), 50%, 70%);
+	--container-color: #FFF;
+
+	/*========= Font & typography ==========*/
+	--body-font: 'Poppins', sans-serif;
+
+	--big-font-size: 2rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1.125rem;
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
+	--smaller-font-size: 0.75rem;
+
+	/*========= FONT weight ==========*/
+	--font-light: 400;
+	--font-medium: 500;
+	--font-semi-bold: 600;
+	--font-bold: 700;
+
+	/*========= MAGIN BOTTOM ==========*/
+	--mb-0-25: 0.25rem;
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/*========= Z INDEX ==========*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+}
+
+/*--=============== RESPONSIVE ================--*/
+@media screen and (min-width: 1000px) {
+	:root {
+		--big-font-size: 3rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: 0.875rem;
+		--smaller-font-size: 0.813rem;
+	}
+}
+
+/*--=============== Variables Dark theme ================--*/
+
+/*--=============== Button Dark/Light ================--*/
+
+/*--=============== Base ================--*/
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0 0 var(--header-height) 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--text-color);
+}
+
+h1, h2, h3, h4{
+	color: var(--title-color);
+	font-weight: var(--font-semi-bold);
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*--=============== Reusable css classes ================--*/
+.section{
+	padding: 2rem 0 4rem;
+}
+.section__title{
+	font-size: var(--h1-font-size);
+}
+
+.section__subtitle{
+	display: block;
+	font-size: var(--small-font-size);
+	margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle{
+	text-align: center;
+}
+
+/*--=============== Layout ================--*/
+.container{
+	max-width: 768px;
+	margin-left: var(--mb-1-5);
+	margin-right: var(--mb-1-5);
+}
+
+.grid{
+	display: grid;
+	gap: 1.5rem;
+}
+
+/*--=============== NAV ================--*/
+
+/*show menu*/
