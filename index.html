@@ -89,9 +89,13 @@
 
 					<div class="home__img">
 						<svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  							<path fill="#FF0066" d="M62.8,-19.5C68.7,-2.2,52.1,23.3,30.3,38.3C8.6,53.3,-18.3,57.8,-37,45.5C-55.6,33.3,-66,4.2,-58.5,-15.3C-51,-34.9,-25.5,-44.9,1.5,-45.4C28.4,-45.9,56.8,-36.8,62.8,-19.5Z" transform="translate(100 100)" />
-
-  							<image class="home__blob-img" x='12' y='18' xlink:href="assets/img/PhamHoangMinh_rv.png"/>
+  							<mask id="mask0" mask-type="alpha">
+    							<path d="M68.4,-39.1C81.4,-16.8,79.9,14.2,66.1,34C52.3,53.8,26.1,62.3,-1.2,63.1C-28.6,63.8,-57.2,56.7,-67.5,38.9C-77.8,21.2,-69.7,-7.2,-55.3,-30.2C-41,-53.2,-20.5,-70.9,3.6,-73C27.6,-75,55.3,-61.5,68.4,-39.1Z" transform="translate(100 100)" />
+  							</mask>
+  							<g mask="url(#mask0)">
+    							<path d="M68.4,-39.1C81.4,-16.8,79.9,14.2,66.1,34C52.3,53.8,26.1,62.3,-1.2,63.1C-28.6,63.8,-57.2,56.7,-67.5,38.9C-77.8,21.2,-69.7,-7.2,-55.3,-30.2C-41,-53.2,-20.5,-70.9,3.6,-73C27.6,-75,55.3,-61.5,68.4,-39.1Z" transform="translate(100 100)" />
+    							<image class="home__blob-img" x='30' y='20' xlink:href="assets/img/PhamHoangMinh_rv.png"/>
+  							</g>
 						</svg>
 					</div>
 
@@ -114,6 +118,126 @@
 				</div>
 			</div>
 		</section>
+
+		<!--================= ABOUT =================-->
+		<section class="about section" id="about">
+			<h2 class="section__title">About Me</h2>
+			<span class="section__subtitle">My Introduction</span>
+
+			<div class="about__container container grid">
+				<img src="assets/img/about.jpg" alt="" class="about__img">
+
+				<div class="about__data">
+					<p class="about__description">
+						Web deverloper, with extension knowledge and years of experience, working in web technologies and UI/UX design, delivering quality work!
+					</p>
+
+					<div class="about__info">
+						<div>
+							<span class="about__info-title">01+</span>
+							<span class="about__info-name">Years <br> experience</span>
+						</div>
+
+						<div>
+							<span class="about__info-title">10+</span>
+							<span class="about__info-name">Completed <br> project</span>
+						</div>
+
+						<div>
+							<span class="about__info-title">01+</span>
+							<span class="about__info-name">Companies <br> worked</span>
+						</div>
+					</div>
+
+					<div class="about__buttons">
+						<a download="" href="assets/pdf/CV-PhamHoangMinh.pdf" class="button button--flex">
+							Download CV<i class="uil uil-download-alt button__icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--================= SKILLS =================-->
+		<section class="skills section" id="skills">
+			<h2 class="section__title">Skills</h2>
+			<span class="section__subtitle">My Technical Level</span>
+
+			<div class="skills__container container grid">
+				<div>
+					<!--================= SKILLS =================-->
+					<div class="skills__content">
+						<div class="skills__header">
+							<i class="uil uil-brackets-curly skills__icon"></i>
+
+							<div>
+								<h1 class="skills__title">Frontend developer</h1>
+								<span class="skills__subtitle">More than 1 years</span>
+							</div>
+
+							<i class="uil uil-angle-down skills__arrow"></i>
+						</div>
+
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">HTML</h3>
+									<span class="skills__number">80%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__html"></span>
+								</div>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">CSS</h3>
+									<span class="skills__number">>60%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__css"></span>
+								</div>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">JavaScript</h3>
+									<span class="skills__number">40%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__js"></span>
+								</div>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">React</h3>
+									<span class="skills__number">...</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__react"></span>
+								</div>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__title">
+									<h3 class="skills__name">Angular</h3>
+									<span class="skills__number">...</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__angular"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
 	</main>
 
 	<!--============================ FOOTER ============================-->
