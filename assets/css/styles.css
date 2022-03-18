@@ -680,3 +680,11 @@ img{
 	font-size: var(--h3-font-size);
 	margin-bottom: var(--mb-0-5);
 }
+
+.portfolio__description{
+	margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon{
+	transform: translateX(0.25rem);
+}
