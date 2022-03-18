@@ -655,3 +655,28 @@ img{
 	margin-right: var(--mb-0-25);
 }
 
+/*Active Modal*/
+.active-modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+/*--=============== PORTFOLIO ================--*/
+.portfolio__container{
+	overflow: initial;
+}
+
+.portfolio__content{
+	padding: 0 1.5rem;
+}
+
+.portfolio__img{
+	width: 256px;
+	border-radius: 0.5rem;
+	justify-self: center;
+}
+
+.portfolio__title{
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-0-5);
+}
